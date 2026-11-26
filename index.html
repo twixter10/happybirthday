@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Sayang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. Tap / pull & release -->
+<section id="intro" class="screen active">
+  <p class="tiny top">a little something, for you</p>
+  <div id="halo"></div><div id="ring"></div>
+  <div id="heart" role="button" tabindex="0" aria-label="Tap the heart">
+    <svg viewBox="0 0 64 58"><defs>
+      <radialGradient id="hg" cx="35%" cy="25%" r="85%"><stop offset="0" stop-color="#ffc2d0"/><stop offset=".45" stop-color="#ee5a7e"/><stop offset="1" stop-color="#c81c3b"/></radialGradient></defs>
+      <path d="M32 56C10 40 2 28 2 17 2 8 9 2 17 2c6 0 11 3 15 9C36 5 41 2 47 2c8 0 15 6 15 15 0 11-8 23-30 39z" fill="url(#hg)"/>
+      <ellipse cx="19" cy="14" rx="7" ry="4" fill="#fff" opacity=".6" transform="rotate(-35 19 14)"/></svg>
+  </div>
+  <p class="tiny bottom">TAP THE HEART</p>
+</section>
+
+<!-- 2. Happy Birthday -->
+<section id="wish" class="screen">
+  <div class="wish-band">
+    <p class="tiny light">make a wish...</p>
+    <h1 id="hb">Happy<br>Birthday</h1>
+    <i class="underline"></i>
+    <p class="tiny light sub">a moment worth celebrating</p>
+  </div>
+</section>
+
+<div id="flash"></div>
+
+<!-- 3. Blooming wishes -->
+<main id="main" class="screen">
+  <p class="brand">♥ Blooming Wishes ♥</p>
+  <div id="tree"><svg viewBox="0 0 300 400" id="trunk"></svg><div id="canopy"></div></div>
+
+  <div class="hello glass"><span class="script small">and... make it yours</span>
+    <h2 class="script">Happy<br>Birthday</h2><small>here's to a year that blooms</small></div>
+
+  <div class="flow">
+    <div class="spacer"></div>
+    <section class="glass memories"><h3>Beautiful Memories</h3><div id="grid"></div></section>
+    <section class="glass letter">
+      <span class="pill">♥ A message for you</span>
+      <h3 id="title">Selamat Ulang Tahun Sayang</h3>
+      <div class="orn">❦</div>
+      <div id="lines"></div>
+      <p class="sign" id="sign"></p>
+    </section>
+    <button id="giftBtn" class="btn">🎁 Send a Gift</button>
+  </div>
+</main>
+
+<div id="modal" hidden>
+  <div class="box">
+    <div class="gift">🎁</div>
+    <h4>A Special Birthday Gift for You!</h4>
+    <p>May your day be overflowing with love, laughter, sweet surprises, and all the magical moments you deserve.</p>
+    <div class="code">✦ HAPPY BIRTHDAY 2026 ✦</div>
+    <button id="close" class="btn">Close Wishes</button>
+  </div>
+</div>
+<div id="lightbox" hidden></div>
+<button id="mute" hidden aria-label="Music on/off">🔊</button>
+<canvas id="confetti"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
