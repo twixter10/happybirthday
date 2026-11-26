@@ -6,14 +6,13 @@ import os
 import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
-NAME = "Your Name"
-TITLE = "Selamat Ulang Tahun Sayang"
+NAME = "Carl"
+TITLE = "Happy Birthday"
 
 MESSAGE = [
     "Happy birthday to the most special person in my life.",
     "May this year bring you more joy, more peace,",
     "and every little thing your heart has been wishing for.",
-    "Never forget how loved you are, today and always.",
     "I'm so proud of you, and I'm always on your side.",
 ]
 
